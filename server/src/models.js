@@ -1,10 +1,10 @@
-const mongoose = require('mongoose');
-const moment = require('moment');
-const Schema = mongoose.Schema;
+const mongoose = require("mongoose")
+const moment = require('moment')
+const Schema = mongoose.Schema
 const ObjectId = Schema.Types.ObjectId
 
 function buildModel(name, schema){
-    return mongoose.model(name, new Schema(schema, {timestamps: true}));
+    return mongoose.model(name, new Schema(schema, {timestamps: true}))
 }
 
 const Folder = buildModel('Folder', {
